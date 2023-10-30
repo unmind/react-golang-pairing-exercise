@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  # Service for the Go backend application
+  goreact-backend:
+    container_name: goreact-backend
+    build:
+      context: ./backend
+      dockerfile: ../backend.dockerfile
+    command: ["air", "-c", "air.toml"]
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/:/app
+
+  # Service for the React frontend application
+  goreact-frontend:
+    container_name: goreact-frontend
+    build:
+      context: ./frontend
+      dockerfile: ../frontend.dockerfile
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    depends_on:
+      - goreact-backend
+    stdin_open: true
+    volumes:
+      - ./frontend/:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
