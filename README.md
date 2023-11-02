@@ -1,12 +1,14 @@
 # Unmind Talk
 
-Welcome to Unmind Talk. The following project is composed of a Go Backend and a React Typescript Frontend, and build with Docker Compose.
+Welcome to Unmind Talk. The following project is composed of a Go Backend and a React Typescript Frontend, and built with Docker Compose.
 
 # Prerequisites
 
-Clone the following repository. Ensure you have Docker and Docker Compose set up.
+Clone this repository. Ensure you have Docker and Docker Compose set up.
 
-We will walk through what you will do within the interview.
+In the interview we will ask you to work with both the backend and frontend.
+
+You will be able to use any resources such as Google during the interview.
 
 # Instructions
 
