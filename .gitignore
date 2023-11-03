@@ -7,7 +7,6 @@
 
 # Air
 .air
-air.toml
 backend/tmp/
 
 # node
