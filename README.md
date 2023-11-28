@@ -1,20 +1,24 @@
-# Unmind Talk
+# Unmind Golang Pairing Exercise
 
-Welcome to Unmind Talk. The following project is composed of a Go Backend and a React Typescript Frontend, and built with Docker Compose.
+The following project is composed of a Go backend and a React Typescript frontend, and built with Docker Compose.
 
-# Prerequisites
+## Prerequisites
 
 Clone this repository. Ensure you have Docker and Docker Compose set up.
 
-In the interview, we'll be walking through a pairing exercise which will require you to run the frontend and backend locally, and we’ll be asking you to make changes to:
+## Pairing exercise
+
+In the pairing exercise, we'll require you to run the backend and frontend locally, and we'll be asking you to make changes to:
 
 - connect up the frontend and backend
-- serve data from the backend on the frontend
+- serve data from the backend to the frontend
 - make requests from the frontend to the backend to update data
 
-You will be able to use any resources such as Google during the interview.
+We will be primarily working with the Go backend and only using the React frontend for displaying data and potentially interacting with the Go backend.
 
-# Instructions
+You will be able to use any resources such as Google during the pairing exercise.
+
+## Instructions
 
 1. Clone the Repo
 2. Build the docker containers using `docker-compose up --build`
