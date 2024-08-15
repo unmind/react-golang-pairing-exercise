@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Build the Go app
-RUN go install github.com/cosmtrek/air@latest
+RUN go install github.com/air-verse/air@latest
 COPY go.mod ./
 RUN go mod download
 
